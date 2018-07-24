@@ -1,4 +1,4 @@
-// import neo neshta
+// import neo.neshta
 
 public class PaymentContract : SmartContract {
 
