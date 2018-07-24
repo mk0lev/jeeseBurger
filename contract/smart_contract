@@ -1,4 +1,4 @@
-// import neo typotii
+// import neo neshta
 
 public class PaymentContract : SmartContract {
 
