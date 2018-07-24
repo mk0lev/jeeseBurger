@@ -25,7 +25,7 @@ public class PaymentContract : SmartContract {
         }
         // public void Check(){
 
-                // check whether the transaction was correct
+                // check whether the transaction was correct.
 
         // }
 }
