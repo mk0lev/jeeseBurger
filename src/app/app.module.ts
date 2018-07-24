@@ -1,18 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; 
 
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from '../menu/menu.component';
+import { FlappyComponent } from '../flappy/flappy.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, MenuComponent, FlappyComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, MenuComponent, FlappyComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }

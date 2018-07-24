@@ -1,9 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div class="container">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+  
+  <menu></menu>
+  <flappy *ngIf="startApp"></flappy>
 </div>
 
-<canvas id="canvas" width="288" height="512"></canvas>
-<button (click)="restart()">restart</button>

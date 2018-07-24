@@ -1,0 +1,43 @@
+<div class="text-center">
+    <div *ngIf="step == 1">
+        <input class="form-control" type="text" placeholder="NEO address" id="userAddr">
+        <br>
+        <button class="btn btn-primary" (click) = "saveUserAddress()">Enter</button>
+    </div>
+
+    <div *ngIf="step == 2" class="row">
+        <div class="col-md-6 col-md-offest-3">
+            <div class="row">
+                    <h2>You can bet on the following choices</h2>
+                    <div class="col-md-12">
+                        <p>Your current balance : <strong>{{userBalance}}</strong></p>
+                    </div>
+                    <div class="col-md-12">
+                        <p>  Your address : <strong>{{useraddress}}</strong> </p>
+                    </div>
+            </div>
+            <div class="row">
+                    <label class="col-md-6"> 50 score / 0.1%</label>
+                    <input class="form-control col-md-6" type="radio" name="score" value="50" (click)="calculate()" > <br>
+                    <label class="col-md-6"> 100 score / 0.5%</label>
+                    <input class="form-control col-md-6" type="radio" name="score" value="100" (click)="calculate()"  > <br>
+                    <label class="col-md-6"> 200 score / 1%</label>
+                    <input class="form-control col-md-6" type="radio" name="score" value="200" (click)="calculate()"  > <br>
+                    <label class="col-md-6"> 500 score / 5%</label>
+                    <input class="form-control col-md-6" type="radio" name="score" value="500" (click)="calculate()" > <br>
+
+            
+                    <label for="">Amount you want to bet on the game:</label>
+                    <input class="form-control" id="betAmount" type="number" placeholder="Amount to bet" [ngModel]="bet" (ngModelChange)="bet=$event">
+                    <p *ngIf="bet">{{bet}} * {{percent}} = {{bet*percent}} NEO </p>
+                    
+            </div>
+            <p> Each score choise gives neo if completed or takes if not.</p>
+            <button class="btn btn-primary" id="proceedBtn" (click)="betOnChoises()">Proceed</button>
+        </div>
+    </div>
+
+    <div *ngIf="step == 3">
+        <flappy></flappy>
+    </div>
+</div>
