@@ -6,7 +6,7 @@
 
 This is a Flappy Bird challenge game built specifically for nOS and the NEO Blockchain.
 
-In the game you can bet X amount of NEO on what score you are going to achieve. If you achieve your goal, a percantage of your bet will be sent to your NEO Address. The percantage of your goal depends on how much you bet. The more you bet, the more percantage of it will be won if goal is achieved.
+In the game you can bet X amount of NEO on what score you are going to achieve. If you achieve your goal, a percentage of your bet will be sent to your NEO Address. The percentage of your goal depends on how much you bet. The more you bet, the more percentage of it will be won if goal is achieved.
 
 
 ## Installation
