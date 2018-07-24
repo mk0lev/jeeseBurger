@@ -1,27 +1,29 @@
-# FlappyBirdAng
+# Flappy Bird Challenge Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Introduction
 
-## Code scaffolding
+This is a Flappy Bird challenge game built specifically for nOS and the NEO Blockchain.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+In the game you can bet X amount of NEO on what score you are going to achieve. If you achieve your goal, a percantage of your bet will be sent to your NEO Address. The percantage of your goal depends on how much you bet. The more you bet, the more percantage of it will be won if goal is achieved.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Installation
 
-## Running unit tests
+You can install the game in the nOS client. (when the game is up and running)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Alternatively you can run the game locally. If you want to, follow these steps.
 
-## Running end-to-end tests
+1. Clone the repository in a folder by choice:
+git clone https://github.com/mk0lev/jeeseBurger.git
+2. Navigate to game's folder:
+cd /some/path/jeeseBurger
+3. Then install the game by running:
+sudo npm install 
+3. And finally start the server:
+ng serve
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Now the server is listening on port 4200. To play the game simply open up a web browser by choice and type http://localhost:4200/ and enjoy. 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you encounter a problem, don't hesitate to open an Issue.
